@@ -1,0 +1,171 @@
+body, html {
+    height: 100%;
+}
+
+h4 {
+    background-image: linear-gradient(to bottom right, #f58727, #8100e3);
+    display: inline;
+    padding: 3px 3px 3px 3px;
+    border-radius: 6px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+}
+
+/* .services .row .col .card {
+    background-color: azure;
+    border-radius: 8px;
+    height: 120px;
+    width: 80%;
+    /* left: 20px; */
+    /* margin-top: 9px;
+    padding: 15px;
+} */ 
+
+/* .col {
+    background-color: azure;
+    border-radius: 8px;
+    height: 120px;
+    width: 80%;
+    /* left: 20px; */
+    /* margin-top: 9px;
+    padding: 15px;
+} */ 
+
+.row{
+    margin: 8px;
+}
+.col-12 {
+    background-color: azure;
+    border-radius: 8px;
+    height: 120px;
+    width: 80%;
+    margin-top: 9px;
+    padding: 15px;
+    padding-top: 10px;
+}
+
+.links {
+    background-color: #050505;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.Main {
+    background-color: #050505;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 30px;
+    
+}
+
+.barbell-logo{
+    width: 20%;
+    border-radius: 100%;
+    text-align: center;
+    margin-bottom: 70px;
+}
+p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding-top: 6px;
+    
+}
+h1, h2, h3 {
+    font-family: "noto-sans-bold", sans-serif;
+    font-weight: 900;
+}
+
+.button {
+    display: inline;
+}
+
+#register{
+    background-color: #afb3ba;
+    color: #050504;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+    
+}
+#login{
+    background-color: #afb3ba;
+    color: #050504;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    
+}
+
+.info{
+    width: 50%;
+}
+
+.video{
+    background-color: #afb3ba;
+    color: #050504;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.video .embed-responsive {
+    position: relative;
+    display: auto;
+    width: 40%;
+    padding: 0;
+    overflow: hidden;
+    height: auto;
+    left: 30%;
+}
+
+.button-main{
+    display: inline-block;
+}
+
+.options {
+    color: #BF3939;
+}
+
+.services {
+    background-color: #afb3ba;
+    color: #050504;
+    text-align: center;
+    padding-bottom: 50px;
+    
+}
+
+
+
+.member {
+    background-color: #afb3ba;
+    color: #050504;
+    text-align: center;
+}
+
+.section .table {
+    margin-top: 10px;
+}
+
+.section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+footer {
+    text-align: center;
+    background-color: #d1d1d1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+
+
+
+.logout {
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.btn {
+    margin-top: 10px;
+}

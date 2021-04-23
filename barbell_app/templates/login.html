@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form-group" id="login">
+            <ul>
+            {% if messages %}
+                {% for message in messages %}
+                <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            <h1>Login</h1>
+            <form action="/client" method="POST" class="info">
+                {% csrf_token %}
+                <p>Email: <input name="email" type="text" class="form-control"></p>
+                <p>Password: <input name="password" type="password" class="form-control"></p>
+                
+        
+                <button type="submit" class="btn btn-success">Log In</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

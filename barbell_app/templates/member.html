@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Area</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&family=Open+Sans+Condensed:wght@300&display=swapfamily=IBM+Plex+Sans:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="member">
+        <div class='logout'>
+            <form action="/logout">
+                <button type="submit" class="btn btn-outline-danger">Log Out</button>
+            </form>
+
+        </div>
+        <div class="section">
+            <h1>Thanks for registering {{ user.user_name }}!!!</h1>
+            <p>As a registered user you receive a 2 week trial of training</p>
+            <p>Any questions about programming you can schedule a zoom 20 minute consultation with me</p>
+            <a href="https://docs.google.com/spreadsheets/d/1TOuxI-37FFBaG3Lq0HPDhkKgHrO3DYhlg2Hj9TNj6oI/edit?usp=sharing"
+                class="btn btn-success">Give it a try</a>
+        </div>
+        <div class="section">
+            <h4>Basic movements for programming</h4>
+            <table class="table table-hover table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Movement</th>
+                        <th scope="col">Link</th>
+                        <th scope="col">Movement</th>
+                        <th scope="col">Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Muscle Snatch</th>
+                        <td><a href="https://www.youtube.com/watch?v=8mlDmO0ARZs">Demo</a></td>
+                        <th>Power Snatch</th>
+                        <td><a href="https://www.youtube.com/watch?v=cxlZT6n1LNA">Demo</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Power Snatch with pause at knee</th>
+                        <td><a href="https://www.youtube.com/watch?v=7OoU4ElwjKQ">Demo</a></td>
+                        <th>Floating Snatch</th>
+                        <td><a href="https://www.youtube.com/watch?v=UzwhuWxMurc">Demo</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Snatch</th>
+                        <td><a href="https://www.youtube.com/watch?v=yAdu5ptCYdc">Demo</a></td>
+                        <th>Hip Snatch</th>
+                        <td><a href="https://www.youtube.com/watch?v=THb0ovwoKe8">Demo</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Power Clean</th>
+                        <td><a href="https://www.youtube.com/watch?v=T93JmpNl8V0">Demo</a></td>
+                        <th>Power Clean with pause at knee</th>
+                        <td><a href="https://www.youtube.com/watch?v=8R6FRmHvvqU">Demo</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Clean and Jerk</th>
+                        <td><a href="https://www.youtube.com/watch?v=9icpMp-7p3k">Demo</a></td>
+                        <th>Push Press</th>
+                        <td><a href="https://www.youtube.com/watch?v=_7pQNDXS4Vw">Demo</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Push Jerk</th>
+                        <td><a href="https://www.youtube.com/watch?v=Zu2hgRIbP0o">Demo</a></td>
+                        <th>Split Jerk (pause in dip and pause in dip and catch)</th>
+                        <td><a href="https://www.youtube.com/watch?v=PPpso30zeTI">Demo</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3 position halting Clean grip deadlift</th>
+                        <td><a href="https://www.youtube.com/watch?v=rpkHKi-fyjA">Demo</a></td>
+                        <th>3 position halting Snatch grip deadlift</th>
+                        <td><a href="https://www.youtube.com/watch?v=k5fw2y2lK4A">Demo</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Snatch pull</th>
+                        <td><a href="https://www.youtube.com/watch?v=u-brCovjlU8">Demo</a></td>
+                        <th>Clean pull</th>
+                        <td><a href="www.google.com">Demo</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="section">
+            <h1>Feedback</h1>
+            <p>Paid members get feedback, weekly workouts and corrections. Schedule consultation for more info</p>
+            <a href="https://calendly.com" class="btn btn-success">Book now</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Barbell Factor</p>
+        <a href="https://www.instagram.com/jasono380/?hl=en">
+            <i class="fab fa-instagram fa-3x"></i>
+        </a>
+        <a href="mailto:JMOllada@gmail.com">
+            <i class="fas fa-envelope-open-text fa-3x ml-5"></i>
+        </a>
+    </footer>
+</body>
+
+</html>

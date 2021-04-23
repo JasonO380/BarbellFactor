@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbell Factor</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&family=Open+Sans+Condensed:wght@300&display=swapfamily=IBM+Plex+Sans:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+        integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="links">
+        <a href="https://www.instagram.com/jasono380/?hl=en">
+            <i class="fab fa-instagram fa-3x"></i>
+        </a>
+        <a href="mailto:JMOllada@gmail.com">
+            <i class="fas fa-envelope-open-text fa-3x ml-5"></i>
+        </a>
+    </div>
+    <div class="Main">
+        <img class="barbell-logo" src="static/images/barbell-logo.png" alt="Logo">
+        <h3>Get Lean, Get Strong and Get Flexible</h3>
+        <div class="log_reg">
+            <form action="/login"><button type="submit" class="btn btn-secondary">Login</button></form>
+            <form action="/register"><button type="submit" class="btn btn-secondary">Register</button></form>
+        </div>
+        <p>Register to receive two week trial of training</p>
+    </div>
+    <div class="video">
+        <h3>Seeing is believing</h3>
+        <i class="fas fa-dumbbell options fa-3x"></i>
+        <p>clients in action</p>
+
+        {% for x in video %}
+
+        <video class="embed-responsive embed-responsive-4by3" controls="controls">
+            <source src="{{x.video.url}}" type="video/mp4" />
+        </video>
+
+        {% endfor %}
+    </div>
+    <div class="services">
+        <h2>Services</h2>
+        <div class="row">
+            <div class="col-12 col-md m-2">
+                <h4>Remote coaching</h4>
+                <p>Online remote coaching available through Zoom</p>
+            </div>
+            <div class="col-12 col-md m-2">
+                <h4>Personal Training</h4>
+                <p>In person one on one sessions available. Located in West Town, Chicago</p>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-12 col-md m-2">
+                <h4>Programming</h4>
+                <p>Efficiently progress through an 8-12 week cycle. Type of training is completely up to you. Book a
+                    consultation to find the best fit</p>
+            </div>
+            <div class="col-12 col-md m-2">
+                <h4>Strength</h4>
+                <p>Strength cycles focus on strength and technique</p>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-12 col-md m-2">
+                <h4>Weight loss</h4>
+                <p>Weight loss incorporates HIT while increasing strength and technique</p>
+            </div>
+            <div class="button-main">
+                
+            </div>
+            
+            <div class="col-12 col-md m-2">
+                <h4>Book a consultation</h4>
+                <p>Ready to start a new fitness journey? Book a 20 minute Zoom consultation to go over goals and
+                    questions
+                </p>
+                
+            </div>
+            
+
+        </div>
+        <div class="button-main">
+            <a href="https://calendly.com" class="btn btn-success">Get started</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Barbell Factor</p>
+        <a href="https://www.instagram.com/jasono380/?hl=en">
+            <i class="fab fa-instagram fa-3x"></i>
+        </a>
+        <a href="mailto:JMOllada@gmail.com">
+            <i class="fas fa-envelope-open-text fa-3x ml-5"></i>
+        </a>
+    </footer>
+
+
+
+</body>
+
+</html>
