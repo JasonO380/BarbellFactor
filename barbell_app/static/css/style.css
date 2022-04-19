@@ -9,39 +9,176 @@ h4 {
     border-radius: 6px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 900;
+    color: black;
 }
 
-/* .services .row .col .card {
-    background-color: azure;
-    border-radius: 8px;
-    height: 120px;
-    width: 80%;
-    /* left: 20px; */
-    /* margin-top: 9px;
-    padding: 15px;
-} */ 
+@media screen and (max-width:600px){
+    #instaHeaderIcon{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+}
 
-/* .col {
-    background-color: azure;
-    border-radius: 8px;
-    height: 120px;
-    width: 80%;
-    /* left: 20px; */
-    /* margin-top: 9px;
-    padding: 15px;
-} */ 
+.barbell-logo{
+    width: 20%;
+    border-radius: 100%;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+@media screen and (max-width:600px){
+    .barbell-logo{
+        width: 50%;
+        margin-top: 50px;
+    }
+}
+
+.log_reg{
+    display: none;
+}
+
 
 .row{
     margin: 8px;
 }
-.col-12 {
+
+.videoServicesWrapper{
+    position: relative;
+    display: inline-block;
+    margin-bottom: -6px;
+    background-color: #afb3ba;
+}
+
+.video{
+    background-color: #afb3ba;
+    color: #050504;
+    text-align: center;
+    padding-bottom: 17px;
+    display: inline-block;
+    width: 100%;
+    max-width: 50%;
+    vertical-align: top;
+    float: right;
+    
+}
+
+@media screen and (max-width:600px){
+    .video{
+        display: inline-block;
+        width:100%;
+        max-width:100%;
+    }
+}
+@media screen and (min-width:700px) and (max-width: 900px){
+    .video{
+        max-width: 60%;
+    }
+}
+
+.video .embed-responsive {
+    position: relative;
+    display: auto;
+    width: 40%;
+    padding: 0;
+    overflow: hidden;
+    height: auto;
+    left: 30%;
+    border: 10px solid black;
+    border-radius: 5px;
+}
+
+@media screen and (min-width:700px) and (max-width: 900px){
+    .video .embed-responsive{
+        padding-bottom: 45px;
+    }
+}
+
+.servicesWrapper {
+    background-color: #afb3ba;
+    color: #050504;
+    text-align: center;
+    padding-bottom: 50px;
+    display: inline-block;
+    width:100%;
+    max-width:50%;
+    float: left;
+    
+}
+
+@media screen and (min-width:700px) and (max-width: 900px){
+    .servicesWrapper{
+        max-width: 40%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .servicesWrapper{
+        display: inline-block;
+        width:100%;
+        max-width: 100%;
+    }
+}
+
+.profilePic{
+    display: inline-block;
+    float: left;
+    width: 100%;
+}
+
+#bioPic{
+    max-width: 60%;
+    margin-top: -25px;
+    border: 10px solid black;
+    border-radius: 8px;
+}
+
+@media screen and (min-width:700px) and (max-width: 900px){
+    #bioPic{
+        max-width:52%;
+    }
+}
+
+.services {
+    display: inline-block;
     background-color: azure;
     border-radius: 8px;
-    height: 120px;
-    width: 80%;
+    vertical-align: top;
+    width: 100%;
+    max-width: 90%;
     margin-top: 9px;
     padding: 15px;
     padding-top: 10px;
+    border: 10px solid black;
+}
+
+@media screen and (min-width:1200px){
+    .services{
+        max-width: 50%;
+        margin-top: 37px;
+    }
+}
+
+#carousel{
+    display: inline-block;
+    background-color: #afb3ba;
+    float: left;
+    width:100%;
+    text-align: center;
+}
+
+.carouselImage{
+    width: 45%;
+    text-align: center;
+    margin-bottom: 70px;
+    border: 10px solid black;
+    border-radius: 8px;
+}
+
+@media screen and (min-width:1200px){
+    .carouselImage{
+        width: 35%;
+    }
 }
 
 .links {
@@ -59,12 +196,6 @@ h4 {
     
 }
 
-.barbell-logo{
-    width: 20%;
-    border-radius: 100%;
-    text-align: center;
-    margin-bottom: 70px;
-}
 p {
     font-family: 'IBM Plex Sans', sans-serif;
     padding-top: 6px;
@@ -101,23 +232,6 @@ h1, h2, h3 {
     width: 50%;
 }
 
-.video{
-    background-color: #afb3ba;
-    color: #050504;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.video .embed-responsive {
-    position: relative;
-    display: auto;
-    width: 40%;
-    padding: 0;
-    overflow: hidden;
-    height: auto;
-    left: 30%;
-}
-
 .button-main{
     display: inline-block;
 }
@@ -126,15 +240,6 @@ h1, h2, h3 {
     color: #BF3939;
 }
 
-.services {
-    background-color: #afb3ba;
-    color: #050504;
-    text-align: center;
-    padding-bottom: 50px;
-    
-}
-
-
 
 .member {
     background-color: #afb3ba;
@@ -142,16 +247,56 @@ h1, h2, h3 {
     text-align: center;
 }
 
+iframe{
+    width: 75%;
+    height: 500px;
+    margin: 10px 0px 10px;
+    
+}
+
 .section .table {
     margin-top: 10px;
+}
+
+#squat{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    /* width: 95%;
+    margin: auto; */
+}
+#back{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 7px;
+}
+
+.header{
+    display: inline-block;
+}
+
+.description{
+    /* background-color: azure; */
+    background-color: #afb3ba;
+    margin: auto;
+    border-radius: 15px;
+    width: 50%;
+    padding: 6px;
+}
+
+.instructions{
+    color: black;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .section {
     padding-top: 25px;
     padding-bottom: 25px;
 }
-footer {
+.footerBottom {
     text-align: center;
+    display: inline-block;
+    width: 100%;
     background-color: #d1d1d1;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -168,4 +313,11 @@ footer {
 
 .btn {
     margin-top: 10px;
+}
+
+
+
+.password {
+    text-align: center;
+    margin-top: 50px;
 }

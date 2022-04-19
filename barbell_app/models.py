@@ -40,7 +40,6 @@ class UserManager(models.Manager):
         users = self.filter(email=email)
         if not users:
             return False
-
         user = users[0]
         return bcrypt.checkpw(password.encode(), user.password.encode())
 
@@ -51,6 +50,7 @@ class UserManager(models.Manager):
             email = form['email'],
             password = pw,
         )
+        
 
 class User(models.Model):
     user_name = models.CharField(max_length=55)
@@ -59,6 +59,8 @@ class User(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     objects = UserManager()
+    def __str__(self):
+        return self.user_name + '  ' + self.email 
 
 class Video(models.Model):
     caption=models.CharField(max_length=155)
